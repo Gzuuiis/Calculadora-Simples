@@ -1,0 +1,41 @@
+.textarea{
+    font-size: 12pt;
+    height: 35px;
+}
+.botao input{
+    color: rgb(0, 0, 0);
+    background-color: rgb(96, 96, 96);
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    
+}
+.botao input:hover{
+    color: rgb(0, 0, 0);
+    background-color:  rgb(120, 120, 120);
+    transform: scale(1.1);
+}
+.selet{
+    margin: auto;
+    background-color: rgb(201, 201, 201);
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.maisbt{
+    height: 80px;
+}
+.maisbt input{
+    padding: -0.10em;
+    height: 80px;
+}
+
+.onoff{
+    right: 3px;
+    position: absolute;
+}
+.onoff img{
+    cursor: pointer;
+   width: 70px;
+}

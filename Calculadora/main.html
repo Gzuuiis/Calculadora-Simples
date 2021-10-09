@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="onoff" >
+            <img id="onoff" src="img/ligada.png" onclick="onoff()" alt="">
+        </div>
+            <form name="calc" class="calc" >
+                <table class="selet" id="selet" width="200" border="4" cellpadding="10" cellspacing="10">
+                     <tr>
+                        <td> <input class="textarea" type="text" name="caixa" size="49" maxlength="25"></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <table class="botao" width="100%" border="0" cellpadding="10" cellspacing="10">
+                                <tr>
+                                    <td> <input  class="botoes" type="button" value="C" onclick="digitos(this.value)"> </td>
+                                    <td> <input  class="botoes" type="button" value="-" onclick="bspace()"> </td>
+                                </tr>
+                                 <tr>
+                                    <td> <input  class="botoes" type="button" value="7" onclick="digitos(this.value)"></td>
+                                    <td> <input  class="botoes" type="button" value="8" onclick="digitos(this.value)"></td>
+                                    <td> <input  class="botoes" type="button" value="9" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value=" / " onclick="digitos(this.value)"></td>
+                                </tr>
+                                 <tr>
+                                    <td> <input class="botoes" type="button" value="4" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value="5" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value="6" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value=" * " onclick="digitos(this.value)"></td>
+                                </tr> 
+                                 <tr>
+                                    <td> <input class="botoes" type="button" value="1" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value="2" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value="3" onclick="digitos(this.value)"></td>
+                                    <td> <input class="botoes" type="button" value=" - " onclick="digitos(this.value)"></td>
+                                </tr>
+                                 <tr>
+                                    <td class="ultimalinha"> <input class="botoes" type="button" value="0" onclick="digitos(this.value)"></td>
+                                    <td class="ultimalinha"> <input class="botoes" type="button" value="." onclick="digitos(this.value)"></td>
+                                    <td class="ultimalinha"> <input class="botoes" type="button" value="=" onclick="calcs()"> </td>
+                                    <td class="maisbt" > <input class="botoes" type="button" value=" + " onclick="digitos(this.value)"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script src="js/index.js"></script>
+</body>
+</html>
