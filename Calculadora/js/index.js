@@ -17,8 +17,8 @@ function bspace(){
 
 function onoff(){
     var imagem = document.getElementById('onoff')
-    var imagem_ligado = "file:///E:/Inform%C3%A1tica/Projetos/Calculadora/img/ligada.png"
-    var imagem_desligado = "file:///E:/Inform%C3%A1tica/Projetos/Calculadora/img/desligada.png"
+    var imagem_ligado = "file:///D:/Inform%C3%A1tica/Projetos/Calculadora/img/ligada.png"
+    var imagem_desligado = "file:///D:/Inform%C3%A1tica/Projetos/Calculadora/img/desligada.png"
 
     var background_calculadora = document.getElementById('selet')
     var botoes = document.querySelectorAll('.botoes')
