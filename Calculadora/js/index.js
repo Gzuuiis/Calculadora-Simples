@@ -16,9 +16,18 @@ function bspace(){
 }
 
 function onoff(){
+
     var imagem = document.getElementById('onoff')
-    var imagem_ligado = "file:///D:/Inform%C3%A1tica/Projetos/Calculadora/img/ligada.png"
-    var imagem_desligado = "file:///D:/Inform%C3%A1tica/Projetos/Calculadora/img/desligada.png"
+
+    var url_atual_brut = window.location.href;
+
+
+    var imagem_ligado    = url_atual_brut.replace('main.html','img/ligada.png') 
+    var imagem_desligado = url_atual_brut.replace('main.html','img/desligada.png') 
+
+    console.log(imagem.src)
+    console.log(imagem_ligado)
+  
 
     var background_calculadora = document.getElementById('selet')
     var botoes = document.querySelectorAll('.botoes')
